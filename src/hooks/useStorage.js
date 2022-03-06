@@ -5,8 +5,7 @@ import {
 	timestamp,
 } from "../firebase/config";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import {} from "firebase/firestore";
-import { doc, addDoc, collection } from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 
 const useStorage = (file) => {
 	const [progress, setProgress] = useState(0);
